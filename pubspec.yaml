@@ -1,0 +1,55 @@
+name: drivers
+description: A Very Good Project created by Very Good CLI.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+  flutter: 3.0.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #state management
+  flutter_bloc: ^8.0.1
+  bloc: ^8.0.3
+
+  #DI
+  get_it: ^7.2.0
+
+  #firebase
+  firebase_core: ^1.12.0
+  cloud_firestore: ^3.1.7
+  firebase_auth: ^3.3.6
+  firebase_storage: ^10.2.7
+  google_sign_in: ^5.2.4
+
+  #local data
+  shared_preferences: ^2.0.13
+
+  # Functional programming thingies
+  dartz: ^0.10.1
+  equatable: ^2.0.3
+
+  #localization
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+
+dev_dependencies:
+  bloc_test: ^9.0.3
+  flutter_test:
+    sdk: flutter
+  mocktail: ^0.3.0
+  flutter_lints: ^1.0.0
+  #very_good_analysis: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/vectors/illustrations/
+    - assets/vectors/icons/
+    - assets/images/
+    - assets/fonts/
